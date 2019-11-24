@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Commands - Sharat C Tadimalla</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Commands";
+    var mkdocs_page_input_path = "git_commands.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Sharat C Tadimalla</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Git</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../git_installation/">Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../git_basics/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../git_workflows/">Git Workflows</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Commands</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#basic-git-commands">Basic git commands</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#initialize-local-git-repo">initialize local git repo</a></li>
+        
+            <li><a class="toctree-l4" href="#clone-a-remote-repository">clone a remote repository</a></li>
+        
+            <li><a class="toctree-l4" href="#add-files-to-staging-area">add files to staging area</a></li>
+        
+            <li><a class="toctree-l4" href="#set-user-specific-config-values">set user specific config values</a></li>
+        
+            <li><a class="toctree-l4" href="#display-the-list-of-changed-files-together-with-the-files-yet-to-be-committed">display the list of changed files together with the files yet to be committed</a></li>
+        
+            <li><a class="toctree-l4" href="#send-local-commits-to-remote-branch">send local commits to remote branch</a></li>
+        
+            <li><a class="toctree-l4" href="#create-a-new-branch-and-automatically-switch-to-it">create a new branch and automatically switch to it</a></li>
+        
+            <li><a class="toctree-l4" href="#view-all-remote-repositories">view all remote repositories</a></li>
+        
+            <li><a class="toctree-l4" href="#add-local-repo-to-a-remote">add local repo to a remote</a></li>
+        
+            <li><a class="toctree-l4" href="#remove-a-connection-to-the-specified-remote-repo">remove a connection to the specified remote repo</a></li>
+        
+            <li><a class="toctree-l4" href="#list-all-branches">list all branches</a></li>
+        
+            <li><a class="toctree-l4" href="#remove-a-local-branch">remove a local branch</a></li>
+        
+            <li><a class="toctree-l4" href="#merge-a-branch-into-an-active-one">merge a branch into an active one</a></li>
+        
+            <li><a class="toctree-l4" href="#list-conflict-agains-the-base-file">list conflict agains the base file</a></li>
+        
+            <li><a class="toctree-l4" href="#view-conflicts-between-branches">view conflicts between branches</a></li>
+        
+            <li><a class="toctree-l4" href="#list-all-present-conflicts">list all present conflicts</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Sharat C Tadimalla</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Git &raquo;</li>
+        
+      
+    
+    <li>Commands</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="basic-git-commands">Basic git commands</h1>
+<h3 id="initialize-local-git-repo">initialize local git repo</h3>
+<pre><code>git init
+</code></pre>
+
+<h3 id="clone-a-remote-repository">clone a remote repository</h3>
+<pre><code>git clone https://path/to/remote-repository
+</code></pre>
+
+<h3 id="add-files-to-staging-area">add files to staging area</h3>
+<pre><code>git add filename.txt
+</code></pre>
+
+<h3 id="set-user-specific-config-values">set user specific config values</h3>
+<pre><code>git config --global user.name name
+</code></pre>
+
+<h3 id="display-the-list-of-changed-files-together-with-the-files-yet-to-be-committed">display the list of changed files together with the files yet to be committed</h3>
+<pre><code>git status
+</code></pre>
+
+<h3 id="send-local-commits-to-remote-branch">send local commits to remote branch</h3>
+<pre><code>git push origin master
+</code></pre>
+
+<h3 id="create-a-new-branch-and-automatically-switch-to-it">create a new branch and automatically switch to it</h3>
+<pre><code>git checkout -b branch_name
+</code></pre>
+
+<h3 id="view-all-remote-repositories">view all remote repositories</h3>
+<pre><code>git remote -v
+</code></pre>
+
+<h3 id="add-local-repo-to-a-remote">add local repo to a remote</h3>
+<pre><code>git remote add origin https://path/to/remote-repo
+</code></pre>
+
+<h3 id="remove-a-connection-to-the-specified-remote-repo">remove a connection to the specified remote repo</h3>
+<pre><code>git remote rm origin
+</code></pre>
+
+<h3 id="list-all-branches">list all branches</h3>
+<pre><code>git branch
+</code></pre>
+
+<h3 id="remove-a-local-branch">remove a local branch</h3>
+<pre><code>git branch -d branch_name
+</code></pre>
+
+<h3 id="merge-a-branch-into-an-active-one">merge a branch into an active one</h3>
+<pre><code>git merge branch_name
+</code></pre>
+
+<h3 id="list-conflict-agains-the-base-file">list conflict agains the base file</h3>
+<pre><code>git diff --base filename
+</code></pre>
+
+<h3 id="view-conflicts-between-branches">view conflicts between branches</h3>
+<pre><code>git diff source_branch target_branch
+</code></pre>
+
+<h3 id="list-all-present-conflicts">list all present conflicts</h3>
+<pre><code>git diff
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../git_workflows/" class="btn btn-neutral" title="Git Workflows"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../git_workflows/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
