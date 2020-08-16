@@ -16,4 +16,39 @@ pairs.collect()
 
 ## Transformation on Pair RDDs
 
+* pairRDD
+```
+pairRDD = sc.parallelize([(1,2),(3,4),(3,5)])
+```
+
+* reduceByKey
+```
+pairRDD.reduceByKey(lambda x,y: x+y)
+```
+
+* groupByKey
+```
+pairRDD.groupByKey()
+```
+
+* mapValues
+```
+pairRDD.mapValues(lambda x: x*x).collect()
+```
+
+* keys
+```
+pairRDD.keys().collect()
+```
+
+* values
+```
+pairRDD.values().collect()
+```
+
+* sortByKey
+```
+pairRDD.sortByKey().collect()
+```
+
 
